@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: lightgray;
+}
+
+.resume {
+    width: 800px;
+    background: #ffffff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left {
+    background:#404042;
+    width: 250px;
+    padding: 0 20px;
+}
+
+.right {
+    width: calc(100% - 250px);
+}
+
+.left .img-holder {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img-holder img {
+    width: 93%;
+    border-radius: 30px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #0f4cd1;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+    /* background-color: forestgreen; */
+    margin-top: 35px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 50px;
+    height: 3px;
+    background:  #0f4cd1;
+}
+
+.left .icon {
+    font-size: 20px;
+    color: #118dc0;
+}
+
+.left .text{
+    color:#118dc0 ;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.contact .li-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li-wrap .icon {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact .li-wrap .text {
+    width: calc(100% -  50px);
+    word-break: break-word;
+    color: #ffffff;
+}
+
+.skills ul, .hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li-wrap, .hobbies .li-wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.skills .li-wrap {
+    background: #ffffff;
+}
+
+.skills .li-wrap .text, .hobbies .li-wrap .text {
+    margin-top: 5px;
+}
+
+.hobbies-wrap {
+    margin-top: 50px;
+}
+
+.hobbies .li-wrap {
+    border: 2px solid #ffffff;
+}
+
+.hobbies .li-wrap .icon, .hobbies .li-wrap .text {
+    color: #ffffff;
+}
+
+.hobbies .li-wrap:hover {
+    background: #ffffff;
+}
+
+.hobbies .li-wrap:hover .icon, 
+.hobbies .li-wrap:hover .text {
+    color: #118dc0;
+}
+
+.header {
+    background-color: #404042;
+    padding: 15px 30px;
+    color: #ffffff;
+    height: 240px;
+}
+
+.header .name {
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0f4cd1;
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 15px;
+    line-height: 21px;
+    font-size: 13px;
+}
+
+.right-inner {
+    padding: 20px;
+}
+
+.right-inner .education {
+    margin-top: 30px;
+}
+
+.right-inner .li-wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right-inner .li-wrap .date {
+    width: 125px;
+    color: #118dc0;
+    /* background-color: cyan; */
+}
+
+.right-inner .li-wrap .info {
+    width: calc(100% - 125px);
+    /* width: 100%; */
+    padding-left: 25px;
+    position: relative;
+    /* background-color: green; */
+}
+
+.right-inner .li-wrap .info-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #118dc0;
+}
+
+.right-inner .li-wrap .info-com {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right-inner .li-wrap .info-cont {
+    margin-top: 15px;
+} 
+
+.right-inner .li-wrap .info:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background:#118dc0;
+    border-radius: 50%;
+}
+
+.right-inner .li-wrap .info:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background:#118dc0;
+}
